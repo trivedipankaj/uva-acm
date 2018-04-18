@@ -13,5 +13,13 @@ lint lcm(lint a, lint b){
 
 
 int main(){
- cout<<gcd(10,15)<<endl;
+ int t, a, b,l,g;
+ scanf("%d",&t);
+ while(t--){
+    scanf("%d %d",&a,&b);
+      g = gcd(a,b);
+      l = lcm(a,b);
+      if( a!=g && b!=l) printf("-1\n");
+      else printf("%d %d\n",a,b);
+ }
 }
